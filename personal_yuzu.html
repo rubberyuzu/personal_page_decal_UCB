@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE=HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="styelsheet/styles.css" charset="utf-8"  media="screen"> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+<style>
+	body{
+		background-color: white;
+		color: black;
+		font-size: 100%;
+		font-family: 'Open Sans', 'sans-serif';
+
+	}
+	a{
+		text-decoration: none;
+		-webkit-transition: color 0.5s;
+        -moz-transition:    color 0.5s;
+        -ms-transition:     color 0.5s;
+        -o-transition:      color 0.5s;
+        transition:         color 0.5s;
+	}
+	a:link{
+		color: white;
+	}
+	a:visited{
+		color:white;
+	}
+	a:hover{
+		color:#C0C0C0 ;
+	}
+
+	 #topbar{
+	 	height:10%;
+	 	width: 102%;
+	 	margin: -1%;
+	 	margin-top: -1%;
+	 	position: fixed;
+	 	background-color: black;
+	 	opacity: 40%;
+	 	z-index: 60;
+	 }
+	 .yuzu_button{
+	 	color: white;
+	 	position: absolute;
+	 	font-size: 50px;
+	 	font-weight: bolder;
+	 	margin-top: 0px;
+	 	margin-bottom: auto;
+	 	margin-left: 15px;
+
+	 }
+	 .yuzu_button:hover{
+	 	color:#C0C0C0  ;
+	 	cursor: pointer;
+	 	
+	 }
+	 .button_side{
+	 	color: white;
+	 	float: right;
+	 	font-size: 30px;
+	 	font-weight: bold;
+	 	margin-top: 15px;
+	 	margin-bottom: auto;
+	 	margin-right: 30px;
+
+	 }
+	 .button_side:hover{
+	 	color:#C0C0C0 ;
+	    cursor: pointer;
+	 }
+	 #work{
+	 	position:relative;
+	 	width: 105%;
+	 	height: 1380px;
+	 	margin-left: -1%;
+	 	margin-right: -1%;
+	 	background-color: black;
+	 }
+	 
+	 .liked{
+
+	 	color: #FF69B4;
+	 }
+
+
+	 .image img{
+	 	float: left;
+	 	max-width: 50%;
+	    max-height: 50%;
+	    width: 720px;
+	 	height:460px;
+	 	
+	 }
+	/* .image img:hover{
+	 	opacity:0.3;
+	 	filter:alpha(opacity=30);
+	 	-webkit-transition: opacity 0.7s;
+        -moz-transition:    opacity 0.7s;
+        -ms-transition:     opacity 0.7s;
+        -o-transition:      opacity 0.7s;
+        transition:         opacity 0.7s;
+	 }*/
+	 .caption{
+	 	display: none;
+	 	position: relative;
+	 	color: white;
+	 	width: 100%;
+	 	height: 100%;
+
+	 }
+	 .caption h2{
+	 	margin:20px;
+	 }
+	 .caption h3{
+	 	margin:30px;
+	 }
+	 #trash .caption{
+	 	display: none;
+	 	position: absolute;
+	 	top: 10%;
+	 	left: 0%;
+	 }
+	 #moeka .caption{
+	 	display: none;
+	 	position: absolute;
+	 	top: 10%;
+	 	left: 50%;
+	 }
+	 #reina .caption{
+	 	display: none;
+	 	position: absolute;
+	 	top: 45%;
+	 	left: 0%;
+	 }
+	 #yuiko .caption{
+	 	display: none;
+	 	position: absolute;
+	 	top: 45%;
+	 	left: 50%;
+	 }
+	 #crazy .caption{
+	 	display: none;
+	 	position: absolute;
+	 	top: 80%;
+	 	left: 0%;
+	 }
+	 #crepe .caption{
+	 	display: none;
+	 	position: absolute;
+	 	top: 80%;
+	 	left: 50%;
+	 }
+
+
+
+     #info{
+     	position: relative;
+     	background-color: black;
+     	width: 120%;
+     	height: 800px;
+     	margin-left: -1%;
+	 	margin-right: -1%;
+     } 
+     #prof_img{
+     	position: relative;
+     }
+	 #prof_img img{
+	 	opacity:0.6;
+	 	filter:alpha(opacity=60);
+	 	max-width: 102%;
+	 	max-height: 100%;
+	 	height: 900px;
+	 	width: 1440px;
+	 }
+	 #self_intro{
+	 	color: white;
+	 	position: absolute;
+	 	top: -10px;
+	 	left: 20px;
+
+	 }	
+	 .midashi{
+	 	font-size: 60px;
+	 	font-weight: bold;
+	 	color: white;
+	 } 
+	
+	
+	 .sentense{
+	 	font-size: 35px;
+	 	margin-top:0px;
+	 	font-weight: bold;
+	 }
+	 .explanation{
+	 	font-size: 20px;
+	 	margin-top: -20px;
+	 	margin-left: 30px;
+	 }
+	 
+
+	#hey_there{
+		position: absolute;
+	
+		top: 0;
+		left: 50%;
+		width: 30%;
+		height: 70%;
+	}
+	#hey_there:hover{
+		cursor: pointer;	
+	}
+	#speak{
+		display: none;
+		position: absolute;
+		color: white;
+		background-color: black;
+		top: 10%;
+		left: 26%;
+		padding: 5%;
+		border-radius: 50px;
+		font-size: 30px;
+
+		
+	}
+	#yes{
+		color: black;
+		position: absolute;
+		bottom: 10%;
+		left: 28%;
+		padding: 2%;
+		text-align: center;
+
+		background-color: white;
+		border-radius: 120px;
+		}
+	#no{
+		color: black;
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		padding: 2%;		
+		text-align: center;
+
+		background-color: white;
+		border-radius: 120px;
+		}
+
+	 #contact{
+	 	position: relative;
+	 	background-color: black;
+	 	width: 102%;
+	 	height: 100%;
+	 	margin-left: -1%;
+	 	margin-top: -10%;
+	 }
+	 #contact img{
+	 	position: absolute;
+	 	top: 0px;
+	 	width: 100%;
+	 	height: 100%;
+	 	opacity:0.8;
+	 	filter:alpha(opacity=80);
+	 }
+	 #con_yuzu{
+	 	z-index: 30;
+	 	position: relative;
+	 	padding-top: 50px;
+	 	margin-left: 20px;
+	 }
+	 #plz_con{
+	 	z-index: 20;
+	 	position: absolute;
+	 	color: white;
+	 	font-size: 25px;
+	 	top: 120px;
+	 	margin-left: 30px;
+	 }
+	 #sns_list{
+	 	z-index: 30;
+	 	position: absolute;
+	 	margin-left: 40%;
+	 	margin-top: 5%;
+	 	width: 50%;
+	 	height: 80%;
+	 	vertical-align: top;
+	 }
+	 #sns_list li{
+	 	margin-bottom: 5%;
+	 	margin-right: 3%;
+	 	padding: 10px;
+	 	text-align: center;
+	 	width: 40%;
+	 	float: right;
+	 	z-index: 30;
+	 	font-size: 2.00em;
+	 	border: solid 2px white; 
+	 	border-radius: 25px;
+	 }
+	 #twi_link{
+	 	z-index: 30;
+	 	background-color: #4099FF;
+	 	color: white;
+	 	padding: 0.5%;
+	 	border-radius: 25px;
+	 	width: 10%;
+	 	position: absolute;
+	 	top: 31%;
+	 	left: 70%;
+	 	text-align: center;
+	 	font-weight: bold;
+	 	display: none;
+	 }
+	 
+	 
+
+	 #map_yuzu{	 
+	 	
+	 	position: relative;
+	 	margin-left: -1%;
+	 	margin-bottom: 0%;
+	
+	 	
+	 }
+	 
+</style>
+<script src="assets/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="assets/script.js"></script>
+
+
+
+</head>
+<body>
+	<div id="topbar">
+		<div class="yuzu_button"><a href=#work>YUZU</a></div>
+		<div class="button_side"><a href=#contact>CONTACT</a></div>
+		<div class="button_side"><a href=#info>INFO</a></div>
+		<div class="button_side"><a href=#work>WORK</a></div>
+		
+	</div>
+	<div id="work">
+	<div class='image' id="trash"><img src="img/trash.jpg">
+		<div class="caption">
+			<h2>"TRASH"</h2> <h3>taken in April 2014<br>final project for UC Berkeley photography class</h3>
+		</div>
+	</div>
+	<div class='image' id="moeka"><img src="img/moeka.jpg">
+        <div class="caption">
+			<h2>"the world in sunglasses"</h2> <h3>taken in March 2014,<br> mid project for UC Berkeley photography class</h3>
+		</div>
+	</div>
+	<div class='image' id="reina"><img src="img/reina.jpg">
+ 		<div class="caption">
+			<h2>"jump to somewhere"</h2> <h3>taken in March 2014, <br>mid project for UC Berkeley photography class</h3>
+		</div>
+	</div>
+	<div class='image' id="yuiko"><img src="img/yuiko.jpg">
+		<div class="caption">
+			<h2>"yuiko."</h2> <h3>edited in February 2014</h3>
+		</div>
+	</div>
+    <div class='image' id="crazy"><img src="img/crazy.jpg">
+    	<div class="caption">
+			<h2>"TRAPPED"</h2> <h3>taken in December 2013,<br> NY "Fuerza Bruta"</h3>
+		</div>
+    </div>
+    <div class='image' id="crepe"><img src="img/crepe.jpg">
+    	<div class="caption">
+			<h2>"my sweet crepe"</h2> <h3>taken in April 2014, Berkeley</h3>
+		</div>
+    </div>
+    </div>
+    <div id="info">
+    	<div id="prof_img">
+    		<img src="img/yuzu.jpg">
+    		<div id="self_intro">
+    			<p class="midashi">YUZU.SAIJO.</p> 
+    			<p class="sentense"><a href="https://github.com/rubberyuzu">I CODE</a></p>
+    			  <p class="explanation"><b>Ruby on Rails</b> --<em>DevBootcamp</em><br>
+    			  <b>Java</b> --<em>Google Japan Summer Internship</em><br>
+    			  <b>HTML/CSS, Javascript</b> --<em>2units @UC Berkeley</em><br>
+    			  </p>
+    			<p class="sentense"><a href="https://www.behance.net/rubberyuzu">I DESIGN</a></p>
+    			<p class="explanation">
+    				<b>Photography</b>  --<em>2units @UC Berkeley</em><br>
+    				<b>Graphic Design</b>--<em>4units @UC Berkeley</em><br>
+    				<b>Web Design</b>--<em>2units @UC Berkeley</em><br>
+    				
+    			<p class="sentense"><a href="http://www.teachforall.org/national-organization/teach-japan">I TEACH</a></p>
+    			<p class="explanation"><b>English</b>--<em>had 45  aspiring UTokyo students in all <br>for 2 years in Tetsuryokukai</em><br>
+    			<b>Math</b>--<em>Teach For Japan</em></p>
+    		</div>
+    	</div>
+    	<div id="hey_there"></div>
+    	<div id="speak"><b class="interest">Interested in me?</b>
+    		<a href="#contact"><div id="options">
+    		<div id="yes"><b>YES</b></div><div id="no"><b>NO</b></div>
+    	    </div>
+    	    </a>
+    	</div>
+    </div>
+    <div id="contact">
+    	<p class="midashi" id="con_yuzu">CONTACT YUZU.</p>
+    	
+
+    	    	<p id="plz_con">Feel free to contact YUZU to ask for building webapps, taking photos, design, or just to say hello!</p>
+    	
+        <ul id="sns_list"><div id="twitter"><li ><a href="https://twitter.com/rubberyuzu">Twitter</a></li></div>
+        <li><a href="https://www.facebook.com/yuzu.saijo">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/profile/view?authToken=obRX&trkInfo=VSRPsearchId%3A2179283221386229104553%2CVSRPtargetId%3A217928322%2CVSRPcmpt%3Aprimary&locale=ja_JP&id=217928322&trk=vsrp_people_res_photo&srchtotal=1&srchindex=1&srchid=2179283221386229104553&authType=NAME_SEARCH">LinkedIn</a></li>
+        <li><a href="https://github.com/rubberyuzu">GitHub</a></li>
+        <li><a href="https://www.wantedly.com/users/1333310">Wantedly</a></li>
+        <li><a href="https://plus.google.com/u/0/114305398439973398371/posts">Google+</a></li>
+        </ul>
+        <div id="twi_link"><a href="https://twitter.com/intent/user?screen_name=rubberyuzu">Follow YUZU.</a></div>
+    	
+    <img src="img/yuzu_con.jpg">
+      </div>
+
+
+
+
+      <div id="map_yuzu">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.6061899558445!2d-122.25176599999999!3d37.86950399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857c3044c08169%3A0xd1060f2f482f3b62!2sInternational+House%2C+UC+Berkeley!5e0!3m2!1sen!2sus!4v1398843609056" width="1440" height="600" frameborder="0" style="border:0"></iframe>
+</div>
+
+
+
+</body>
